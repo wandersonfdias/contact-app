@@ -19,6 +19,29 @@ Be aware that it’s not an _über-jar_ as the dependencies are copied into the 
 
 The application is now runnable using `java -jar target/contact-app-1.0.0-SNAPSHOT-runner.jar`.
 
+## Docker
+
+### Build
+```
+docker build -f src/main/docker/Dockerfile.jvm -t fiap/challenge/contact-app .
+```
+
+### Run 
+````
+docker run -i --rm -p 8080:8080 fiap/challenge/contact-app
+```
+
+## Postman File for Tests
+
+View file `postman/fiap-challenge-container.postman_collection.json.
+
+### Implemented Operations
+
+- GET /contact
+- POST /contact
+- PUT /contact/{id}
+- DELETE /contact/{id}
+
 ## Creating a native executable
 
 You can create a native executable using: `./mvnw package -Pnative`.
