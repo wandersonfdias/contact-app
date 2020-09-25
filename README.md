@@ -1,10 +1,6 @@
 # contact-app project
 
-This project uses Quarkus, the Supersonic Subatomic Java Framework.
-
-If you want to learn more about Quarkus, please visit its website: https://quarkus.io/ .
-
-## Running the application in dev mode
+Ajusta ## Running the application in dev mode
 
 You can run your application in dev mode that enables live coding using:
 ```
@@ -27,11 +23,11 @@ docker build -f src/main/docker/Dockerfile.jvm -t fiap/challenge/contact-app .
 ```
 
 ### Run 
-````
+```
 docker run -i --rm -p 8080:8080 fiap/challenge/contact-app
 ```
 
-## Postman File for Tests
+## Postman File
 
 View file `postman/fiap-challenge-container.postman_collection.json.
 
